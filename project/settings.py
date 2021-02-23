@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework.authtoken',
     'account',
+    'product',
 ]
 
 MIDDLEWARE = [
@@ -117,3 +118,17 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 AUTH_USER_MODEL = "account.User"
+
+BASE_URL = 'http://data.fixer.io/api/latest?access_key=34e2df461e05e5871c51b4293d8a62c8'
+
+REST_FRAMEWORK = {
+    'DEFAULT_THROTTLE_CLASSES': [
+        'rest_framework.throttling.UserRateThrottle'
+    ],
+    'DEFAULT_THROTTLE_RATES': {
+        # 'anon': '5/min',
+        'user': '5/min',
+        # 'burst': '5/min',
+
+    }
+}
