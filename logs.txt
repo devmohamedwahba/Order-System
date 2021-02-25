@@ -1530,3 +1530,100 @@ Original exception text was: 'Product' object has no attribute 'products'.
 25-02-2021 11:58:32 WARNING  [log.py:224] Unauthorized: /api/user/me/
 25-02-2021 11:58:32 WARNING  [log.py:224] Bad Request: /api/user/create/
 25-02-2021 11:58:33 WARNING  [log.py:224] Unauthorized: /api/product/product/
+25-02-2021 12:06:37 INFO     [autoreload.py:617] Watching for file changes with StatReloader
+25-02-2021 12:06:43 WARNING  [log.py:224] Not Found: /
+25-02-2021 12:06:46 WARNING  [log.py:224] Not Found: /
+25-02-2021 12:07:30 DEBUG    [core.py:163] Successfully imported extension module "markdown.extensions.toc".
+25-02-2021 12:07:30 DEBUG    [core.py:126] Successfully loaded extension "markdown.extensions.toc.TocExtension".
+25-02-2021 12:07:30 WARNING  [log.py:224] Method Not Allowed: /api/user/create/
+25-02-2021 12:09:02 DEBUG    [core.py:163] Successfully imported extension module "markdown.extensions.toc".
+25-02-2021 12:09:02 DEBUG    [core.py:126] Successfully loaded extension "markdown.extensions.toc.TocExtension".
+25-02-2021 12:09:02 WARNING  [log.py:224] Method Not Allowed: /api/user/token/
+25-02-2021 12:09:49 DEBUG    [core.py:163] Successfully imported extension module "markdown.extensions.toc".
+25-02-2021 12:09:49 DEBUG    [core.py:126] Successfully loaded extension "markdown.extensions.toc.TocExtension".
+25-02-2021 12:12:32 DEBUG    [core.py:163] Successfully imported extension module "markdown.extensions.toc".
+25-02-2021 12:12:32 DEBUG    [core.py:126] Successfully loaded extension "markdown.extensions.toc.TocExtension".
+25-02-2021 12:12:36 DEBUG    [core.py:163] Successfully imported extension module "markdown.extensions.toc".
+25-02-2021 12:12:36 DEBUG    [core.py:126] Successfully loaded extension "markdown.extensions.toc.TocExtension".
+25-02-2021 12:15:29 DEBUG    [core.py:163] Successfully imported extension module "markdown.extensions.toc".
+25-02-2021 12:15:29 DEBUG    [core.py:126] Successfully loaded extension "markdown.extensions.toc.TocExtension".
+25-02-2021 12:16:24 DEBUG    [core.py:163] Successfully imported extension module "markdown.extensions.toc".
+25-02-2021 12:16:24 DEBUG    [core.py:126] Successfully loaded extension "markdown.extensions.toc.TocExtension".
+25-02-2021 12:23:31 DEBUG    [core.py:163] Successfully imported extension module "markdown.extensions.toc".
+25-02-2021 12:23:31 DEBUG    [core.py:126] Successfully loaded extension "markdown.extensions.toc.TocExtension".
+25-02-2021 12:23:31 DEBUG    [core.py:163] Successfully imported extension module "markdown.extensions.toc".
+25-02-2021 12:23:31 DEBUG    [core.py:126] Successfully loaded extension "markdown.extensions.toc.TocExtension".
+25-02-2021 12:23:32 DEBUG    [core.py:163] Successfully imported extension module "markdown.extensions.toc".
+25-02-2021 12:23:32 DEBUG    [core.py:126] Successfully loaded extension "markdown.extensions.toc.TocExtension".
+25-02-2021 12:23:33 DEBUG    [core.py:163] Successfully imported extension module "markdown.extensions.toc".
+25-02-2021 12:23:33 DEBUG    [core.py:126] Successfully loaded extension "markdown.extensions.toc.TocExtension".
+25-02-2021 12:23:36 DEBUG    [core.py:163] Successfully imported extension module "markdown.extensions.toc".
+25-02-2021 12:23:36 DEBUG    [core.py:126] Successfully loaded extension "markdown.extensions.toc.TocExtension".
+25-02-2021 12:23:36 WARNING  [log.py:224] Method Not Allowed: /api/user/token/
+25-02-2021 12:23:37 DEBUG    [core.py:163] Successfully imported extension module "markdown.extensions.toc".
+25-02-2021 12:23:37 DEBUG    [core.py:126] Successfully loaded extension "markdown.extensions.toc.TocExtension".
+25-02-2021 12:23:37 WARNING  [log.py:224] Method Not Allowed: /api/user/create/
+25-02-2021 12:23:44 DEBUG    [core.py:163] Successfully imported extension module "markdown.extensions.toc".
+25-02-2021 12:23:44 DEBUG    [core.py:126] Successfully loaded extension "markdown.extensions.toc.TocExtension".
+25-02-2021 12:23:44 WARNING  [log.py:224] Method Not Allowed: /api/user/create/
+25-02-2021 12:25:19 WARNING  [log.py:224] Bad Request: /api/user/create/
+25-02-2021 12:25:33 DEBUG    [selector_events.py:59] Using selector: EpollSelector
+25-02-2021 12:25:33 DEBUG    [selector_events.py:59] Using selector: EpollSelector
+25-02-2021 12:25:44 DEBUG    [selector_events.py:59] Using selector: EpollSelector
+25-02-2021 12:25:47 INFO     [connectionpool.py:212] Starting new HTTP connection (1): data.fixer.io
+25-02-2021 12:25:48 DEBUG    [connectionpool.py:394] "GET /api/latest?access_key=34e2df461e05e5871c51b4293d8a62c8 HTTP/1.1" 200 None
+25-02-2021 12:25:53 INFO     [autoreload.py:617] Watching for file changes with StatReloader
+25-02-2021 12:27:34 DEBUG    [selector_events.py:59] Using selector: EpollSelector
+25-02-2021 12:27:34 DEBUG    [selector_events.py:59] Using selector: EpollSelector
+25-02-2021 12:27:35 DEBUG    [selector_events.py:59] Using selector: EpollSelector
+25-02-2021 12:27:39 INFO     [connectionpool.py:212] Starting new HTTP connection (1): data.fixer.io
+25-02-2021 12:27:40 DEBUG    [connectionpool.py:394] "GET /api/latest?access_key=34e2df461e05e5871c51b4293d8a62c8 HTTP/1.1" 200 None
+25-02-2021 12:27:51 INFO     [autoreload.py:617] Watching for file changes with StatReloader
+25-02-2021 12:29:04 DEBUG    [core.py:163] Successfully imported extension module "markdown.extensions.toc".
+25-02-2021 12:29:04 DEBUG    [core.py:126] Successfully loaded extension "markdown.extensions.toc.TocExtension".
+25-02-2021 12:29:04 WARNING  [log.py:224] Method Not Allowed: /api/user/token/
+25-02-2021 12:30:03 WARNING  [log.py:224] Unauthorized: /api/user/me/
+25-02-2021 12:30:03 WARNING  [log.py:224] Unauthorized: /api/user/me/
+25-02-2021 12:30:06 DEBUG    [core.py:163] Successfully imported extension module "markdown.extensions.toc".
+25-02-2021 12:30:06 DEBUG    [core.py:126] Successfully loaded extension "markdown.extensions.toc.TocExtension".
+25-02-2021 12:30:06 WARNING  [log.py:224] Method Not Allowed: /api/user/token/
+25-02-2021 12:30:17 DEBUG    [core.py:163] Successfully imported extension module "markdown.extensions.toc".
+25-02-2021 12:30:17 DEBUG    [core.py:126] Successfully loaded extension "markdown.extensions.toc.TocExtension".
+25-02-2021 12:30:17 WARNING  [log.py:224] Method Not Allowed: /api/user/token/
+25-02-2021 12:30:19 DEBUG    [core.py:163] Successfully imported extension module "markdown.extensions.toc".
+25-02-2021 12:30:19 DEBUG    [core.py:126] Successfully loaded extension "markdown.extensions.toc.TocExtension".
+25-02-2021 12:30:19 WARNING  [log.py:224] Method Not Allowed: /api/user/token/
+25-02-2021 12:30:21 DEBUG    [core.py:163] Successfully imported extension module "markdown.extensions.toc".
+25-02-2021 12:30:21 DEBUG    [core.py:126] Successfully loaded extension "markdown.extensions.toc.TocExtension".
+25-02-2021 12:30:21 WARNING  [log.py:224] Method Not Allowed: /api/user/token/
+25-02-2021 12:30:23 DEBUG    [core.py:163] Successfully imported extension module "markdown.extensions.toc".
+25-02-2021 12:30:23 DEBUG    [core.py:126] Successfully loaded extension "markdown.extensions.toc.TocExtension".
+25-02-2021 12:31:25 WARNING  [log.py:224] Method Not Allowed: /api/user/me/
+25-02-2021 12:31:51 DEBUG    [core.py:163] Successfully imported extension module "markdown.extensions.toc".
+25-02-2021 12:31:51 DEBUG    [core.py:126] Successfully loaded extension "markdown.extensions.toc.TocExtension".
+25-02-2021 12:31:54 DEBUG    [core.py:163] Successfully imported extension module "markdown.extensions.toc".
+25-02-2021 12:31:54 DEBUG    [core.py:126] Successfully loaded extension "markdown.extensions.toc.TocExtension".
+25-02-2021 12:32:58 DEBUG    [core.py:163] Successfully imported extension module "markdown.extensions.toc".
+25-02-2021 12:32:58 DEBUG    [core.py:126] Successfully loaded extension "markdown.extensions.toc.TocExtension".
+25-02-2021 12:33:05 DEBUG    [core.py:163] Successfully imported extension module "markdown.extensions.toc".
+25-02-2021 12:33:05 DEBUG    [core.py:126] Successfully loaded extension "markdown.extensions.toc.TocExtension".
+25-02-2021 12:33:15 DEBUG    [core.py:163] Successfully imported extension module "markdown.extensions.toc".
+25-02-2021 12:33:15 DEBUG    [core.py:126] Successfully loaded extension "markdown.extensions.toc.TocExtension".
+25-02-2021 12:33:15 WARNING  [log.py:224] Method Not Allowed: /api/user/token/
+25-02-2021 12:33:22 DEBUG    [core.py:163] Successfully imported extension module "markdown.extensions.toc".
+25-02-2021 12:33:22 DEBUG    [core.py:126] Successfully loaded extension "markdown.extensions.toc.TocExtension".
+25-02-2021 12:33:33 DEBUG    [core.py:163] Successfully imported extension module "markdown.extensions.toc".
+25-02-2021 12:33:33 DEBUG    [core.py:126] Successfully loaded extension "markdown.extensions.toc.TocExtension".
+25-02-2021 12:33:35 DEBUG    [core.py:163] Successfully imported extension module "markdown.extensions.toc".
+25-02-2021 12:33:35 DEBUG    [core.py:126] Successfully loaded extension "markdown.extensions.toc.TocExtension".
+25-02-2021 12:35:41 WARNING  [log.py:224] Forbidden: /api/product/product/
+25-02-2021 12:37:05 WARNING  [log.py:224] Bad Request: /api/product/product/1/
+25-02-2021 12:38:32 DEBUG    [core.py:163] Successfully imported extension module "markdown.extensions.toc".
+25-02-2021 12:38:32 DEBUG    [core.py:126] Successfully loaded extension "markdown.extensions.toc.TocExtension".
+25-02-2021 12:40:29 DEBUG    [core.py:163] Successfully imported extension module "markdown.extensions.toc".
+25-02-2021 12:40:29 DEBUG    [core.py:126] Successfully loaded extension "markdown.extensions.toc.TocExtension".
+25-02-2021 12:40:29 WARNING  [log.py:224] Not Found: /api/product/product/total-revenue/
+25-02-2021 12:40:55 DEBUG    [core.py:163] Successfully imported extension module "markdown.extensions.toc".
+25-02-2021 12:40:55 DEBUG    [core.py:126] Successfully loaded extension "markdown.extensions.toc.TocExtension".
+25-02-2021 12:42:24 DEBUG    [selector_events.py:59] Using selector: EpollSelector
+25-02-2021 12:42:24 DEBUG    [selector_events.py:59] Using selector: EpollSelector
