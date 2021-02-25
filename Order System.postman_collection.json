@@ -1,0 +1,505 @@
+{
+	"info": {
+		"_postman_id": "5898e1f4-26e4-4e17-b448-d6ec74705604",
+		"name": "Order System",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/api/user/create/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"admin@admin.com\",\n    \"password\": \"123456\",\n    \"name\": \"admin\",\n    \"is_staff\": true\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/user/create/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"user",
+						"create",
+						""
+					]
+				},
+				"description": "create admin user"
+			},
+			"response": []
+		},
+		{
+			"name": "/api/user/create/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"user@user.com\",\n    \"password\": \"123456\",\n    \"name\": \"user\",\n    \"is_staff\": false\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/user/create/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"user",
+						"create",
+						""
+					]
+				},
+				"description": "create ordinary user"
+			},
+			"response": []
+		},
+		{
+			"name": "/api/user/token/ ",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"user@user.com\",\n    \"password\": \"123456\"\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/user/token/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"user",
+						"token",
+						""
+					]
+				},
+				"description": "get token for admin user"
+			},
+			"response": []
+		},
+		{
+			"name": "/api/user/me/ ",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Token 982f1441d72b284cb21dfb653d5af9d2e71bb9ed",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/user/me/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"user",
+						"me",
+						""
+					]
+				},
+				"description": "get information of logged in user"
+			},
+			"response": []
+		},
+		{
+			"name": "/api/product/currency/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Token 982f1441d72b284cb21dfb653d5af9d2e71bb9ed"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/product/currency/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"product",
+						"currency",
+						""
+					]
+				},
+				"description": "get information of all currency"
+			},
+			"response": []
+		},
+		{
+			"name": "/api/product/product/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Token 982f1441d72b284cb21dfb653d5af9d2e71bb9ed"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/product/product/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"product",
+						"product",
+						""
+					]
+				},
+				"description": "get list of products"
+			},
+			"response": []
+		},
+		{
+			"name": "/api/product/product/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Token e7f304bc23d4fef80246eeb0cb88684aa3eb1e70"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"product 1\",\n    \"quantity\": 10,\n    \"price\": 120,\n    \"currency\": 1\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/product/product/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"product",
+						"product",
+						""
+					]
+				},
+				"description": "create product"
+			},
+			"response": []
+		},
+		{
+			"name": "/api/product/product/",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Token e7f304bc23d4fef80246eeb0cb88684aa3eb1e70"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"product 2\"\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/product/product/1/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"product",
+						"product",
+						"1",
+						""
+					]
+				},
+				"description": "modify product"
+			},
+			"response": []
+		},
+		{
+			"name": "/api/product/product/",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Token e7f304bc23d4fef80246eeb0cb88684aa3eb1e70"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/product/product/1/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"product",
+						"product",
+						"1",
+						""
+					]
+				},
+				"description": "delete product"
+			},
+			"response": []
+		},
+		{
+			"name": "/api/product/product/purchased-product/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Token e7f304bc23d4fef80246eeb0cb88684aa3eb1e70"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/product/product/purchased-product/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"product",
+						"product",
+						"purchased-product",
+						""
+					]
+				},
+				"description": "get purchased-product"
+			},
+			"response": []
+		},
+		{
+			"name": "/api/product/order/total-revenue/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Token e7f304bc23d4fef80246eeb0cb88684aa3eb1e70"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/product/order/total-revenue/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"product",
+						"order",
+						"total-revenue",
+						""
+					]
+				},
+				"description": "get total revenue"
+			},
+			"response": []
+		},
+		{
+			"name": "/api/product/order/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Token e7f304bc23d4fef80246eeb0cb88684aa3eb1e70"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"products\": [\n        {\n            \"id\":1,\n            \"quantity\":20\n        }\n    ],\n    \"order_currency\": 1\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/product/order/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"product",
+						"order",
+						""
+					]
+				},
+				"description": "purchased product"
+			},
+			"response": []
+		}
+	]
+}
