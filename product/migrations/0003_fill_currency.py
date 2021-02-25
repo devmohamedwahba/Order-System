@@ -13,9 +13,10 @@ class Migration(migrations.Migration):
 
     def get_currency(apps, schema_editor):
         fixer_api = FixerApi(base_url=settings.BASE_URL)
-        currencies = fixer_api.get_all_exchange_rate_base_euro().get('rates')
-        for name, price in currencies.items():
-            Currency.objects.create(name=name, price=price)
+        currencies = fixer_api.get_all_exchange_rate_base_euro()
+        if currencies:
+            for name, price in currencies.get('rates').items():
+                Currency.objects.create(name=name, price=price)
 
     operations = [
         migrations.RunPython(get_currency),

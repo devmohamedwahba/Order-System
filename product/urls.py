@@ -11,6 +11,5 @@ router.register('order', OrderViewSet)
 app_name = 'product'
 urlpatterns = [
     path('', include(router.urls)),
-
 ]
 

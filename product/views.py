@@ -3,7 +3,7 @@ from rest_framework.decorators import action
 from rest_framework.response import Response
 from rest_framework.authentication import TokenAuthentication
 from rest_framework.permissions import IsAuthenticated
-from .models import Product, Currency, Order, OrderProduct
+from .models import Product, Currency, Order
 from .serializers import ProductSerializer, CurrencySerializer, OrderSerializer
 from utils.permission import IsNormalUser
 from django.db.models import Sum
@@ -69,6 +69,9 @@ class OrderViewSet(viewsets.GenericViewSet,
     def get_total_revenue(self, request):
         order_count = Order.objects.all().count()
         total_revenue = Order.objects.aggregate(Sum('total'))
-        return Response({
-            "data": {"total": total_revenue['total__sum'], "count": order_count}
-        }, status=status.HTTP_200_OK)
+        return Response(
+            {"data": {
+                    "total": total_revenue['total__sum'], "count": order_count
+                }
+            }, status=status.HTTP_200_OK
+        )
