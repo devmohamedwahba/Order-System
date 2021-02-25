@@ -43,7 +43,7 @@ class OrderSerializer(serializers.ModelSerializer):
         order = self.Meta.model.objects.create(**validated_data)
         order_total = 0
         for product in products:
-            product_item = Product.objects.get(id=product.get('id'))
+            product_item = Product.objects.filter(id=product.get('id')).first()
             if product_item and product_item.quantity > 0:
                 product_price_in_euro = product_item.price / product_item.currency.price
                 all_product_total_exchange_in_euro = product_price_in_euro * product.get('quantity')
@@ -55,6 +55,8 @@ class OrderSerializer(serializers.ModelSerializer):
                 product_item.quantity -= product.get('quantity')
                 product_item.save()
                 order_total += all_product_total_exchange_in_euro
+            else:
+                return order
         order.total = order_total
         order.exchange_rate = order.order_currency.price
         order.total_exchange = order.exchange_rate * order.total
@@ -64,4 +66,4 @@ class OrderSerializer(serializers.ModelSerializer):
     class Meta:
         model = Order
         fields = ('id', 'user', 'products', 'total', 'order_currency', 'total_exchange', 'created_at', 'updated_at')
-        read_only_fields = ('id', 'user', 'total','total_exchange', 'created_at', 'updated_at')
+        read_only_fields = ('id', 'user', 'total', 'total_exchange', 'created_at', 'updated_at')

@@ -1627,3 +1627,393 @@ Original exception text was: 'Product' object has no attribute 'products'.
 25-02-2021 12:40:55 DEBUG    [core.py:126] Successfully loaded extension "markdown.extensions.toc.TocExtension".
 25-02-2021 12:42:24 DEBUG    [selector_events.py:59] Using selector: EpollSelector
 25-02-2021 12:42:24 DEBUG    [selector_events.py:59] Using selector: EpollSelector
+25-02-2021 12:46:59 DEBUG    [selector_events.py:59] Using selector: EpollSelector
+25-02-2021 12:46:59 INFO     [connectionpool.py:212] Starting new HTTP connection (1): data.fixer.io
+25-02-2021 12:47:00 DEBUG    [connectionpool.py:394] "GET /api/latest?access_key=34e2df461e05e5871c51b4293d8a62c8 HTTP/1.1" 200 None
+25-02-2021 12:47:01 WARNING  [log.py:224] Method Not Allowed: /api/user/me/
+25-02-2021 12:47:02 WARNING  [log.py:224] Bad Request: /api/user/token/
+25-02-2021 12:47:02 WARNING  [log.py:224] Bad Request: /api/user/token/
+25-02-2021 12:47:03 WARNING  [log.py:224] Bad Request: /api/user/token/
+25-02-2021 12:47:03 WARNING  [log.py:224] Bad Request: /api/user/create/
+25-02-2021 12:47:03 WARNING  [log.py:224] Unauthorized: /api/user/me/
+25-02-2021 12:47:03 WARNING  [log.py:224] Bad Request: /api/user/create/
+25-02-2021 12:47:03 WARNING  [log.py:224] Unauthorized: /api/product/product/
+25-02-2021 12:49:28 INFO     [autoreload.py:617] Watching for file changes with StatReloader
+25-02-2021 12:49:37 DEBUG    [core.py:163] Successfully imported extension module "markdown.extensions.toc".
+25-02-2021 12:49:37 DEBUG    [core.py:126] Successfully loaded extension "markdown.extensions.toc.TocExtension".
+25-02-2021 12:50:41 ERROR    [log.py:224] Internal Server Error: /api/product/order/
+Traceback (most recent call last):
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/product/views.py", line 66, in perform_create
+    serializer.save(user=self.request.user)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 205, in save
+    self.instance = self.create(validated_data)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/product/serializers.py", line 46, in create
+    product_item = Product.objects.get(id=product.get('id'))
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/django/db/models/query.py", line 429, in get
+    raise self.model.DoesNotExist(
+product.models.Product.DoesNotExist: Product matching query does not exist.
+25-02-2021 12:51:32 DEBUG    [core.py:163] Successfully imported extension module "markdown.extensions.toc".
+25-02-2021 12:51:32 DEBUG    [core.py:126] Successfully loaded extension "markdown.extensions.toc.TocExtension".
+25-02-2021 12:51:42 DEBUG    [core.py:163] Successfully imported extension module "markdown.extensions.toc".
+25-02-2021 12:51:42 DEBUG    [core.py:126] Successfully loaded extension "markdown.extensions.toc.TocExtension".
+25-02-2021 12:51:46 ERROR    [log.py:224] Internal Server Error: /api/product/order/
+Traceback (most recent call last):
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/product/views.py", line 66, in perform_create
+    serializer.save(user=self.request.user)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 205, in save
+    self.instance = self.create(validated_data)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/product/serializers.py", line 46, in create
+    product_item = Product.objects.get(id=product.get('id'))
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/django/db/models/query.py", line 429, in get
+    raise self.model.DoesNotExist(
+product.models.Product.DoesNotExist: Product matching query does not exist.
+25-02-2021 12:51:55 DEBUG    [core.py:163] Successfully imported extension module "markdown.extensions.toc".
+25-02-2021 12:51:55 DEBUG    [core.py:126] Successfully loaded extension "markdown.extensions.toc.TocExtension".
+25-02-2021 12:52:00 DEBUG    [core.py:163] Successfully imported extension module "markdown.extensions.toc".
+25-02-2021 12:52:00 DEBUG    [core.py:126] Successfully loaded extension "markdown.extensions.toc.TocExtension".
+25-02-2021 12:52:18 ERROR    [log.py:224] Internal Server Error: /api/product/order/
+Traceback (most recent call last):
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/product/views.py", line 66, in perform_create
+    serializer.save(user=self.request.user)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 205, in save
+    self.instance = self.create(validated_data)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/product/serializers.py", line 46, in create
+    product_item = Product.objects.get(id=product.get('id'))
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/django/db/models/query.py", line 429, in get
+    raise self.model.DoesNotExist(
+product.models.Product.DoesNotExist: Product matching query does not exist.
+25-02-2021 12:52:22 DEBUG    [core.py:163] Successfully imported extension module "markdown.extensions.toc".
+25-02-2021 12:52:22 DEBUG    [core.py:126] Successfully loaded extension "markdown.extensions.toc.TocExtension".
+25-02-2021 12:52:24 DEBUG    [core.py:163] Successfully imported extension module "markdown.extensions.toc".
+25-02-2021 12:52:24 DEBUG    [core.py:126] Successfully loaded extension "markdown.extensions.toc.TocExtension".
+25-02-2021 12:52:24 WARNING  [log.py:224] Too Many Requests: /api/product/product/
+25-02-2021 12:52:30 DEBUG    [selector_events.py:59] Using selector: EpollSelector
+25-02-2021 12:52:30 DEBUG    [selector_events.py:59] Using selector: EpollSelector
+25-02-2021 12:52:31 INFO     [autoreload.py:617] Watching for file changes with StatReloader
+25-02-2021 12:52:33 DEBUG    [core.py:163] Successfully imported extension module "markdown.extensions.toc".
+25-02-2021 12:52:33 DEBUG    [core.py:126] Successfully loaded extension "markdown.extensions.toc.TocExtension".
+25-02-2021 12:53:52 INFO     [autoreload.py:240] /home/mohamedwahba/Desktop/DEV/Order-System/product/views.py changed, reloading.
+25-02-2021 12:53:52 DEBUG    [selector_events.py:59] Using selector: EpollSelector
+25-02-2021 12:53:52 INFO     [autoreload.py:617] Watching for file changes with StatReloader
+25-02-2021 12:57:51 INFO     [autoreload.py:240] /home/mohamedwahba/Desktop/DEV/Order-System/product/views.py changed, reloading.
+25-02-2021 12:57:51 DEBUG    [selector_events.py:59] Using selector: EpollSelector
+25-02-2021 12:57:51 INFO     [autoreload.py:617] Watching for file changes with StatReloader
+25-02-2021 12:57:54 ERROR    [log.py:224] Internal Server Error: /api/product/order/
+Traceback (most recent call last):
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/product/views.py", line 67, in perform_create
+    serializer.save(user=self.request.user)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 205, in save
+    self.instance = self.create(validated_data)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/product/serializers.py", line 46, in create
+    product_item = Product.objects.get(id=product.get('id'))
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/django/db/models/query.py", line 429, in get
+    raise self.model.DoesNotExist(
+product.models.Product.DoesNotExist: Product matching query does not exist.
+25-02-2021 12:58:29 INFO     [autoreload.py:240] /home/mohamedwahba/Desktop/DEV/Order-System/product/views.py changed, reloading.
+25-02-2021 12:58:29 DEBUG    [selector_events.py:59] Using selector: EpollSelector
+25-02-2021 12:58:29 INFO     [autoreload.py:617] Watching for file changes with StatReloader
+25-02-2021 12:59:24 INFO     [autoreload.py:240] /home/mohamedwahba/Desktop/DEV/Order-System/product/serializers.py changed, reloading.
+25-02-2021 12:59:24 DEBUG    [selector_events.py:59] Using selector: EpollSelector
+25-02-2021 12:59:24 INFO     [autoreload.py:617] Watching for file changes with StatReloader
+25-02-2021 12:59:26 ERROR    [log.py:224] Internal Server Error: /api/product/order/
+Traceback (most recent call last):
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/product/views.py", line 66, in perform_create
+    serializer.save(user=self.request.user)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 205, in save
+    self.instance = self.create(validated_data)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/product/serializers.py", line 46, in create
+    product_item = Product.objects.get(id=product.get('id'))
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/django/db/models/query.py", line 429, in get
+    raise self.model.DoesNotExist(
+product.models.Product.DoesNotExist: Product matching query does not exist.
+25-02-2021 12:59:29 ERROR    [log.py:224] Internal Server Error: /api/product/order/
+Traceback (most recent call last):
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/product/views.py", line 66, in perform_create
+    serializer.save(user=self.request.user)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 205, in save
+    self.instance = self.create(validated_data)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/product/serializers.py", line 46, in create
+    product_item = Product.objects.get(id=product.get('id'))
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/django/db/models/query.py", line 429, in get
+    raise self.model.DoesNotExist(
+product.models.Product.DoesNotExist: Product matching query does not exist.
+25-02-2021 12:59:49 ERROR    [log.py:224] Internal Server Error: /api/product/order/
+Traceback (most recent call last):
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/product/views.py", line 66, in perform_create
+    serializer.save(user=self.request.user)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 205, in save
+    self.instance = self.create(validated_data)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/product/serializers.py", line 46, in create
+    product_item = Product.objects.first(id=product.get('id'))
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/django/db/models/query.py", line 429, in get
+    raise self.model.DoesNotExist(
+product.models.Product.DoesNotExist: Product matching query does not exist.
+25-02-2021 12:59:49 INFO     [autoreload.py:240] /home/mohamedwahba/Desktop/DEV/Order-System/product/serializers.py changed, reloading.
+25-02-2021 12:59:49 DEBUG    [selector_events.py:59] Using selector: EpollSelector
+25-02-2021 12:59:49 INFO     [autoreload.py:617] Watching for file changes with StatReloader
+25-02-2021 12:59:56 ERROR    [log.py:224] Internal Server Error: /api/product/order/
+Traceback (most recent call last):
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/product/views.py", line 66, in perform_create
+    serializer.save(user=self.request.user)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 205, in save
+    self.instance = self.create(validated_data)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/product/serializers.py", line 46, in create
+    product_item = Product.objects.first(id=product.get('id'))
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+TypeError: first() got an unexpected keyword argument 'id'
+25-02-2021 13:00:18 INFO     [autoreload.py:240] /home/mohamedwahba/Desktop/DEV/Order-System/product/serializers.py changed, reloading.
+25-02-2021 13:00:18 DEBUG    [selector_events.py:59] Using selector: EpollSelector
+25-02-2021 13:00:19 INFO     [autoreload.py:617] Watching for file changes with StatReloader
+25-02-2021 13:01:42 INFO     [autoreload.py:240] /home/mohamedwahba/Desktop/DEV/Order-System/product/serializers.py changed, reloading.
+25-02-2021 13:01:42 DEBUG    [selector_events.py:59] Using selector: EpollSelector
+25-02-2021 13:01:42 INFO     [autoreload.py:617] Watching for file changes with StatReloader
+25-02-2021 13:01:45 ERROR    [log.py:224] Internal Server Error: /api/product/order/
+Traceback (most recent call last):
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/rest_framework/fields.py", line 457, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/rest_framework/fields.py", line 97, in get_attribute
+    instance = getattr(instance, attr)
+AttributeError: 'Response' object has no attribute 'products'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/rest_framework/mixins.py", line 20, in create
+    headers = self.get_success_headers(serializer.data)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 548, in data
+    ret = super().data
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 246, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 502, in to_representation
+    attribute = field.get_attribute(instance)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/rest_framework/fields.py", line 490, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `products` on serializer `OrderSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `Response` instance.
+Original exception text was: 'Response' object has no attribute 'products'.
+25-02-2021 13:02:04 ERROR    [log.py:224] Internal Server Error: /api/product/order/
+Traceback (most recent call last):
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/rest_framework/fields.py", line 457, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/rest_framework/fields.py", line 97, in get_attribute
+    instance = getattr(instance, attr)
+AttributeError: 'Response' object has no attribute 'products'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/rest_framework/mixins.py", line 20, in create
+    headers = self.get_success_headers(serializer.data)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 548, in data
+    ret = super().data
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 246, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 502, in to_representation
+    attribute = field.get_attribute(instance)
+  File "/home/mohamedwahba/Desktop/DEV/Order-System/venv/lib/python3.8/site-packages/rest_framework/fields.py", line 490, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `products` on serializer `OrderSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `Response` instance.
+Original exception text was: 'Response' object has no attribute 'products'.
+25-02-2021 13:02:04 INFO     [autoreload.py:240] /home/mohamedwahba/Desktop/DEV/Order-System/product/serializers.py changed, reloading.
+25-02-2021 13:02:04 DEBUG    [selector_events.py:59] Using selector: EpollSelector
+25-02-2021 13:02:05 INFO     [autoreload.py:617] Watching for file changes with StatReloader
+25-02-2021 13:03:14 INFO     [autoreload.py:240] /home/mohamedwahba/Desktop/DEV/Order-System/product/views.py changed, reloading.
+25-02-2021 13:03:14 DEBUG    [selector_events.py:59] Using selector: EpollSelector
+25-02-2021 13:03:14 INFO     [autoreload.py:617] Watching for file changes with StatReloader
+25-02-2021 13:03:33 INFO     [autoreload.py:240] /home/mohamedwahba/Desktop/DEV/Order-System/product/views.py changed, reloading.
+25-02-2021 13:03:33 DEBUG    [selector_events.py:59] Using selector: EpollSelector
+25-02-2021 13:03:33 INFO     [autoreload.py:617] Watching for file changes with StatReloader
+25-02-2021 13:03:35 DEBUG    [selector_events.py:59] Using selector: EpollSelector
+25-02-2021 13:03:35 DEBUG    [selector_events.py:59] Using selector: EpollSelector
